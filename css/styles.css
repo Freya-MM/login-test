@@ -1,0 +1,111 @@
+body{
+    background-color: rgb(228, 228, 228);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+button{
+    font-size: 15px;
+    padding: 18px 30px;
+    border-radius: 60px;
+    text-transform: uppercase;
+    border: none;
+    background-color: #404373;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.3s linear;
+    margin-top: 60px;
+}
+button:hover{
+    background-color: #807EBF;
+    border: 1px solid #807EBF;
+}
+h1{
+    font-size: 35px;
+    margin-top: 0;
+}
+input{
+    border: none;
+    border-radius: 60px;
+    padding: 18px 30px;
+    background-color: rgb(246 249 251);
+}
+.text-blue{
+    color: #404373;
+}
+.container{
+    max-width: 1920px;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+.blue{
+    background-color: #404373;
+    color: white;
+}
+.white{
+    background-color: white;
+    color: #2C2940;
+}
+.hidden{
+    width: 0!important;
+    opacity: 0;
+    bottom: -100px;
+    overflow: hidden;
+}
+.account__content{
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+.create-account, 
+.sign-in{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);  
+    transition: 0.3s linear;
+}
+.account__content div{
+    padding: 60px 70px;
+    text-align: center;
+}
+.account__content div p,
+.account__content div h1{
+    text-align: start;
+}
+.account__content div:last-child form{
+    display: flex;
+    flex-direction: column;
+}
+.account__content form input:not(:nth-child(4)){
+    margin-bottom: 14px;
+}
+.account__content form input:first-child{
+    margin-top: 35px;
+    align-items: center;
+}
+.account__content form div{
+    padding: 0;
+}
+.account__content div:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px 0 0 20px;
+    align-items: center;
+}
+.account__content div:last-child{
+    border-radius: 0 20px 20px 0;
+}
+.sign-in .account__content div:first-child{
+    order: 2;
+    border-radius: 0 20px 20px 0;
+}
+.sign-in .account__content div:last-child{
+    order: 1;
+    border-radius: 20px 0 0 20px;
+}
+.sign-in .account__content{
+    grid-template-columns: 65% 35%;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section id="create_account" class="create-account">
+        <div class="account__content container">
+            <div class="blue">
+                <h1>¡Bienvenido otra vez!</h1>
+                <p>Si ya posee una cuenta en nuestro sitio por favor ingresa ahora.</p>
+                <button id="ss_switch">Iniciar sesión</button>
+            </div>
+            <div class="white">
+                <h1 class="text-blue">Crea una cuenta</h1>
+                <p>Por favor llenar el formulario para crear su cuenta</p>
+                <form>
+                    <input id="ca_name" type="text" placeholder="Nombre">
+                    <input id="ca_last_name" type="text" placeholder="Apellidos">
+                    <input id="ca_email" type="email" placeholder="Email">
+                    <input id="ca_pass" type="password" placeholder="Contraseña">
+                    <div>
+                        <button id="btn_ca" type="submit">Crear cuenta</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="sign_in" class="sign-in hidden">
+        <div class="account__content container">
+            <div class="blue">
+                <h1>¿No tienes cuenta?</h1>
+                <p>Create una cuenta ¡ahora!</p>
+                <button id="ca_switch">Crear cuenta</button>
+            </div>
+            <div class="white">
+                <h1 class="text-blue">Inicia sesión</h1>
+                <p>¡Bienvenido nuevamente! Inicia sesión para poder continuar</p>
+                <form>
+                    <input id="si_email" type="email" placeholder="Email">
+                    <input id="si_pass" type="password" placeholder="Contraseña">
+                    <div>
+                        <button id="btn_ss" type="submit">Iniciar sesión</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/functions.js"></script>
+</body>
+</html>
